@@ -41,6 +41,9 @@ class App extends Spine.Controller
 
   open_action: (e) =>
     el          = $(e.currentTarget)
+    @sidebar.find('li').removeClass('active')
+    el.addClass('active')
+
     file_index  = el.parents('.list:first').attr('data-file')
     file        = @files[file_index]
     @navigate "/#{file.path}"
