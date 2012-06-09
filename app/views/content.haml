@@ -1,6 +1,9 @@
 - for klass in @file.classes
-  // todo: klass name somewhere?
+  .box.class
+    %h2= klass.name
+    %p~ @_format_content(klass.docstring || "")
+
   - for method in klass.instancemethods
-    .box
+    .box.method
       %h2= method.name
       %p~ @_format_content(method.docstring || "")

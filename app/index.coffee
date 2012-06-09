@@ -36,6 +36,7 @@ class App extends Spine.Controller
 
   open_file: (file_index) ->
     @file = @files[file_index]
+    @file_name.text(@file.basename)
     @content.html(template.content(@))
 
   _format_content: (content) ->
