@@ -79,12 +79,17 @@ body
         color #3d4852
         font-size 13px
         font-weight bold
+        display block
+        background url(/images/icon-class.png) no-repeat 0px 1px
+        padding-left 22px
+        text-decoration none
 
       &.active
         vbg-gradient(#77a8f2, #5983c2)
         a
           color #fff
           text-shadow 0px 1px 0px rgba(0, 0, 0, 0.65)
+          background-image url(/images/icon-class-active.png)
 
 // Boxes
 // ----------------------------------------------------------------------------
@@ -106,3 +111,15 @@ body
   ul
     li
       margin-bottom 5px
+
+  &.instance-method
+    h2
+      background url(/images/icon-instance-method.png) no-repeat 0px 9px
+      padding-left 24px
+
+  &.class
+    border 1px solid transparent
+    background #f1f5fc
+    h2
+      background url(/images/icon-class.png) no-repeat 2px 9px
+      padding-left 24px

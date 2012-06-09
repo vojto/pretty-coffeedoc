@@ -4,6 +4,6 @@
     %p~ @_format_content(klass.docstring || "")
 
   - for method in klass.instancemethods
-    .box.method
+    .box.instance-method
       %h2= method.name
       %p~ @_format_content(method.docstring || "")
