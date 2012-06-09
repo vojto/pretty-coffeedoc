@@ -1,0 +1,97 @@
+@import './mixin'
+
+// Typo
+// ----------------------------------------------------------------------------
+
+*
+  font-family 'Helvetica Neue', Helvetica, Arial
+
+// Layout
+// ----------------------------------------------------------------------------
+
+html
+  width 100%
+  height 100%
+
+body
+  width 100%
+  height 100%
+  vbox()
+
+  > header
+    height 35px
+    vbg-gradient(#495058, #3c434b)
+    border-top 1px solid #5a6068
+    border-bottom 1px solid #4c525a
+
+    h1
+      font-size 14px
+      color #cedae9
+      text-shadow 0px 1px 1px rgba(0, 0, 0, 0.65)
+
+    > aside
+      margin-left 15px
+      width 200px
+      height 35px
+      border-right 1px solid #636a74
+      float left
+
+    > section
+      text-align left
+      margin-left 230px
+
+  > article
+    box-flex(1)
+    hbox()
+
+    > aside
+      width 215px
+      border-box()
+      background #f1f4f8
+      border-right 1px solid #dae4f0
+
+    > section
+      box-flex(1)
+      padding-top 15px
+
+// Lists
+// ----------------------------------------------------------------------------
+
+.list
+  padding-left 15px
+
+  > h2
+    font-size 13px
+    font-weight normal
+    color #b3bec5
+
+  > ul
+    padding 0px
+    margin 0px
+    list-style none
+
+    li
+      margin-bottom 5px
+
+      a
+        color #3d4852
+        font-size 13px
+        font-weight bold
+
+// Boxes
+// ----------------------------------------------------------------------------
+
+.box
+  margin 0px 15px 15px 15px
+  padding 5px 15px 10px 15px
+  border 1px solid #e8ebee
+  border-radius(3px)
+
+  h2
+    margin 0px
+    padding 0px
+    font-size 16px
+    color #464a4d
+  p
+    margin 0px
+    color #868b8e
