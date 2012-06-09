@@ -1,0 +1,10 @@
+- for file, file_i in @files
+  .list{:"data-file" => file_i}
+    %h2= file.basename
+    %ul
+      - for klass in file.classes
+        %li.class{:"data-name" => klass.name}
+          %a= klass.name
+      - for fun in file.functions
+        %li.function{:"data-name" => fun.name}
+          %a= fun.name
